@@ -32,6 +32,7 @@
     <div class="main-content">
         <h1 class="main-title">الشاشة الرئيسية</h1>
         <p class="main-text">يرجي اختيار مكان التحويل</p>
+        <p class="sub-text">عليك الدخول لقناة الواتساب</p>
 
         <div class="butn-box">
             <button class="menu-btn">
@@ -53,6 +54,15 @@
                 <span class="material-symbols-outlined">info</span>
                 حول
             </button>
+
+            <button class="menu-btn" onclick="window.open('https://whatsapp.com/channel/0029VbCCFuEICVfoz1tTeC1s', '_blank')">
+        <img src="images/wats.png" class="icon-img" alt="WhatsApp">
+        قناة واتساب
+    </button>
+    <button class="menu-btn">
+        <span class="material-symbols-outlined">lock_open</span>
+        مسابقات
+    </button>
         </div>
 
         <div class="syayra">
@@ -190,15 +200,32 @@ body.show-welcome {
     margin-bottom: 30px;
     font-weight: bold;
 }
+.sub-text {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 .butn-box {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
 }
+.menu-btn img.icon-img {
+    height: 26px;
+    width: 26px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+.menu-btn:hover img.icon-img {
+    filter: brightness(1.2);
+}
+
 
 .menu-btn {
     padding: 18px;
@@ -215,6 +242,7 @@ body.show-welcome {
     justify-content: center;
     gap: 10px;
 }
+
 
 .menu-btn span {
     font-size: 26px;
