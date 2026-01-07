@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <meta charset="UTF-8">
+    <title>A47nhaa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="show-welcome">
+
+
+<div class="welcome">
+    <h1 class="title">أهلا بك في موقع أشحنهاا</h1>
+    <p class="subtitle">سريع - أمن - سهل</p>
+    <button class="start_butn">أبدء</button>
+</div>
+
+
+<div class="main">
+    <div class="top-bar">
+        <img src="images/logo.png" class="logo-img" alt="Logo">
+    </div>
+
+    <div class="main-content">
+        <h1 class="main-title">الشاشة الرئيسية</h1>
+        <p class="main-text">يرجي اختيار مكان التحويل</p>
+
+        <div class="butn-box">
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">volunteer_activism</span>
+                تبرع
+            </button>
+
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">assignment</span>
+                عرض الباقات
+            </button>
+
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">home_health</span>
+                الضمانات
+            </button>
+
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">info</span>
+                حول
+            </button>
+        </div>
+
+        <div class="syayra">
+            <h1>جميع الحقوق محفوظة لدي أشحنها - 2026</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'noto nastaliq urdu', serif;
+}
+
+body.show-welcome {
+    overflow: hidden;
+}
+
+
+.welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title,
+.subtitle,
+.start_butn {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeup 1s forwards;
+}
+
+.title {
+    animation-delay: 0.3s;
+    font-size: 32px;
+    margin: 0;
+}
+
+.subtitle {
+    animation-delay: 0.8s;
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.start_butn {
+    animation-delay: 1.3s;
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-family: 'noto nastaliq urdu', serif;
+    background-color: wheat;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start_butn:hover {
+    background-color: #e62d2d;
+    transform: scale(1.1);
+    color: rgb(233, 156, 12);
+}
+
+@keyframes fadeup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 0.8s;
+}
+
+
+.main {
+    display: none;
+    min-height: 100vh;
+    background-color: #111;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top-bar {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid #222;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+
+.main-content {
+    text-align: center;
+    flex: 1;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 30px;
+    margin: 30px 0 10px;
+}
+
+.main-text {
+    font-size: 18px;
+    color: rgb(5, 100, 88);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+.butn-box {
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.menu-btn {
+    padding: 18px;
+    font-size: 22px;
+    font-family: 'Lateef', serif;
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-btn span {
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.menu-btn:hover {
+    background-color: wheat;
+    color: black;
+    transform: scale(1.05);
+}
+
+.menu-btn:hover span {
+    color: black;
+}
+
+
+.syayra {
+    margin: 30px 0 10px;
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+
+<script>
+const startButton = document.querySelector('.start_butn');
+const welcomeScreen = document.querySelector('.welcome');
+const mainScreen = document.querySelector('.main');
+
+startButton.addEventListener('click', () => {
+    welcomeScreen.classList.add('hidden');
+    setTimeout(() => {
+        welcomeScreen.style.display = 'none';
+        mainScreen.style.display = 'flex';
+        document.body.classList.remove('show-welcome');
+    }, 800);
+});
+</script>
+
+</html>
