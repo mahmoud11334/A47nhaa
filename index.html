@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
-    <meta charset="UTF-8">
-    <title>A47nhaa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<meta charset="UTF-8">
+<title>A47nhaa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="icon" href="images/favicon.png" type="image/png">
+
 </head>
 
-<body class="show-welcome">
-
+<body>
 
 <div class="welcome">
-    <h1 class="title">أهلا بك في موقع أشحنهاا</h1>
-    <p class="subtitle">سريع - أمن - سهل</p>
-    <button class="start_butn">أبدء</button>
+    <h1 class="title">أهلاً بك في موقع أشحنها</h1>
+    <p class="subtitle">سريع - آمن - سهل</p>
+    <button class="start-btn">ابدأ</button>
 </div>
-
 
 <div class="main">
     <div class="top-bar">
-        <img src="images/logo.png" class="logo-img" alt="Logo">
+        <img src="images/logo.png" class="logo-img">
     </div>
 
     <div class="main-content">
         <h1 class="main-title">الشاشة الرئيسية</h1>
-        <p class="main-text">يرجي اختيار مكان التحويل</p>
+        <p class="main-text">يرجى اختيار مكان التحويل</p>
         <p class="sub-text">عليك الدخول لقناة الواتساب</p>
 
         <div class="butn-box">
+
             <button class="menu-btn">
                 <span class="material-symbols-outlined">volunteer_activism</span>
                 تبرع
@@ -50,23 +54,74 @@
                 الضمانات
             </button>
 
-            <button class="menu-btn">
+            <button class="menu-btn" id="aboutBtn">
                 <span class="material-symbols-outlined">info</span>
                 حول
             </button>
 
-            <button class="menu-btn" onclick="window.open('https://whatsapp.com/channel/0029VbCCFuEICVfoz1tTeC1s', '_blank')">
-        <img src="images/wats.png" class="icon-img" alt="WhatsApp">
-        قناة واتساب
-    </button>
-    <button class="menu-btn">
-        <span class="material-symbols-outlined">lock_open</span>
-        مسابقات
-    </button>
+            <button class="menu-btn" onclick="window.open('https://whatsapp.com/channel/0029VbCCFuEICVfoz1tTeC1s','_blank')">
+                <img src="images/wats.png">
+                قناة واتساب
+            </button>
+
+            <button class="menu-btn" id="mosbtn">
+                <span class="material-symbols-outlined">lock_open</span>
+                مسابقات
+            </button>
+
         </div>
 
-        <div class="syayra">
-            <h1>جميع الحقوق محفوظة لدي أشحنها - 2026</h1>
+        <div class="overlay" id="aboutOverlay">
+    <div class="about-box">
+        <button class="close-btn" id="closeAbout">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <h2 class="about-title">حول</h2>
+
+        <p class="about-text">
+           أهلا بك نحن فريق الدعم الفني لدي مؤقع و منصه أشحهنا دائما نحاول المحافظه علي افضل جوده 
+           في تقديم الخدمه لعملائنا الكرام و نسعي دائما لتطوير المنصه و اضافه مميزات الجديده
+           و دائما نسعي لتقديم أقل سعر امام خدمة البيع او الشحن  ولاكن 
+           من نحن؟
+           نحن فريق عمل صغير يسعي دائما بتقديم جوده عاليا 
+        </p>
+          <p class="own"> مالك المنصه و الصفحة : @mahmoud</p>
+          <p> يجب عليك دخول قناة الواتساب الخاصه بنا لمتابعة كل جديد
+           و متابعة العروض و المسابقات الشهرية و العروض اليوميه
+           ثق بنا دائما نسعي لأجلك و لأجل راحت بالكم
+          </p>
+
+        <div class="online-box">
+            <span class="online-text">متصل الآن:</span>
+            <span class="online-number" id="onlineCount">2</span>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" id="mosOverlay">
+    <div class="mos-box">
+        <button class="close-btn" id="closemos">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <h2 class="mos-title">مسابقات و سحب مجاني و عروض</h2>
+
+        <p class="mos-text">
+        نشط : مسابقة ببجي ,100لاعب ضد بعض في جيم ارنغل سولو سكواد الفائز يحصل علي سيزون ببجي الحالي بشكل مجاني
+	للمزيد من التفاصيل و الأشتراك انضم لقناة الواتساب   
+ 	</p>
+	<p class="sahb-text">
+	السحب : لا يوجد سحب حتا الان
+	</p>
+	<p class="ard-test">
+	العروض : عرض الافتتاح , الحصول علي جميع الباقات بأعلي تخفيض ممكن
+	</p>
+         </div>
+</div>
+
+        <div class="footer">
+            جميع الحقوق محفوظة لدى أشحنها © 2026
         </div>
     </div>
 </div>
@@ -74,18 +129,32 @@
 </body>
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    font-family: 'noto nastaliq urdu', serif;
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
-body.show-welcome {
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
+body {
+    background: black;
+    color: white;
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
 
 .welcome {
     height: 100vh;
@@ -98,47 +167,46 @@ body.show-welcome {
 
 .title,
 .subtitle,
-.start_butn {
+.start-btn {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeup 1s forwards;
+    animation: fadeUp 1s forwards;
 }
 
 .title {
+    font-size: 34px;
     animation-delay: 0.3s;
-    font-size: 32px;
-    margin: 0;
+    font-family: 'Noto Nastaliq Urdu', serif;
 }
 
 .subtitle {
-    animation-delay: 0.8s;
     font-size: 16px;
-    margin-top: 10px;
     color: gray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-delay: 0.8s;
+    font-family: 'Noto Nastaliq Urdu', serif;
 }
 
-.start_butn {
+.start-btn {
     animation-delay: 1.3s;
-    margin-top: 30px;
-    padding: 12px 30px;
-    font-size: 18px;
-    font-family: 'noto nastaliq urdu', serif;
-    background-color: wheat;
-    color: black;
+    margin-top: 25px;
+    padding: 12px 34px;
+    border-radius: 30px;
     border: none;
-    border-radius: 25px;
+    font-size: 20px;
+    background: wheat;
+    color: black;
     cursor: pointer;
     transition: 0.3s;
+    font-family: 'Noto Nastaliq Urdu', serif;
 }
 
-.start_butn:hover {
-    background-color: #e62d2d;
+.start-btn:hover {
+    background: #ff4d4d;
     transform: scale(1.1);
-    color: rgb(233, 156, 12);
+    color: white;
 }
 
-@keyframes fadeup {
+@keyframes fadeUp {
     to {
         opacity: 1;
         transform: translateY(0);
@@ -147,142 +215,288 @@ body.show-welcome {
 
 .welcome.hidden {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-40px);
     transition: 0.8s;
 }
 
-
 .main {
     display: none;
-    min-height: 100vh;
-    background-color: #111;
-    color: white;
+    height: 100vh;
+    width: 100vw;
+    background: #111;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-
 .top-bar {
-    width: 100%;
-    padding: 10px 15px;
-    box-sizing: border-box;
+    height: 60px;
+    padding: 10px 16px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
     border-bottom: 1px solid #222;
+    background: black;
 }
 
 .logo-img {
     height: 40px;
 }
 
-
 .main-content {
-    text-align: center;
     flex: 1;
-    padding: 25px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 16px;
+    text-align: center;
 }
 
 .main-title {
-    font-size: 30px;
-    margin: 30px 0 10px;
+    font-size: 28px;
+    margin-bottom: 6px;
 }
 
 .main-text {
     font-size: 18px;
-    color: rgb(5, 100, 88);
-    margin-bottom: 30px;
+    color: #00b894;
     font-weight: bold;
-}
-.sub-text {
-    font-size: 16px;
-    color: gray;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.sub-text {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 18px;
+    font-family: Arial, sans-serif;
+}
 
 .butn-box {
     width: 100%;
-    max-width: 600px;
+    max-width: 420px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
 }
-.menu-btn img.icon-img {
-    height: 26px;
-    width: 26px;
-    object-fit: contain;
-    vertical-align: middle;
-}
-.menu-btn:hover img.icon-img {
-    filter: brightness(1.2);
-}
-
 
 .menu-btn {
-    padding: 18px;
-    font-size: 22px;
-    font-family: 'Lateef', serif;
-    background-color: #1a1a1a;
-    color: white;
+    height: 56px;
+    border-radius: 16px;
     border: 1px solid #333;
-    border-radius: 14px;
-    cursor: pointer;
-    transition: 0.3s;
+    background: #1a1a1a;
+    color: white;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-
-
-.menu-btn span {
-    font-size: 26px;
-    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .menu-btn:hover {
-    background-color: wheat;
+    background: wheat;
     color: black;
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
-.menu-btn:hover span {
-    color: black;
+.menu-btn span {
+    font-size: 22px;
 }
 
+.menu-btn img {
+    width: 24px;
+    height: 24px;
+}
 
-.syayra {
-    margin: 30px 0 10px;
+.footer {
     font-size: 12px;
     color: gray;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+    .butn-box {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-btn {
+        font-size: 20px;
+        height: 60px;
+    }
+
+    .main-title {
+        font-size: 26px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.about-box {
+    background: #111;
+    color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 18px;
+    padding: 20px;
+    position: relative;
+    animation: popupScale 0.3s ease;
+}
+
+
+@keyframes popupScale {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn span {
+    font-size: 28px;
+}
+
+
+.about-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+.own{
     text-align: right;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.online-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.online-text {
+    color: #aaa;
+}
+
+.online-number {
+    color: #70eb0c;
+    font-weight: bold;
+}
+.mos-box {
+    background: #111;
+    color: white;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 18px;
+    padding: 20px;
+    position: relative;
+    animation: popupScale 0.3s ease;
+}
+
+.mos-title {
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+
+.mos-text {
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.sahb-text {
+    text-align: center;
+    font-size: 15px;
+    color: #ffd369;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ard-test {
+    text-align: center;
+    font-size: 15px;
+    color: #00ffcc;
+    font-weight: bold;
 }
 
 </style>
 
 <script>
-const startButton = document.querySelector('.start_butn');
-const welcomeScreen = document.querySelector('.welcome');
-const mainScreen = document.querySelector('.main');
 
-startButton.addEventListener('click', () => {
-    welcomeScreen.classList.add('hidden');
+const startBtn = document.querySelector('.start-btn');
+const welcome = document.querySelector('.welcome');
+const main = document.querySelector('.main');
+
+startBtn.onclick = () => {
+    welcome.classList.add('hidden');
     setTimeout(() => {
-        welcomeScreen.style.display = 'none';
-        mainScreen.style.display = 'flex';
-        document.body.classList.remove('show-welcome');
+        welcome.style.display = 'none';
+        main.style.display = 'flex';
     }, 800);
+};
+const aboutBtn = document.getElementById('aboutBtn');
+const aboutOverlay = document.getElementById('aboutOverlay');
+const closeAbout = document.getElementById('closeAbout');
+const onlineCount = document.getElementById('onlineCount');
+
+aboutBtn.addEventListener('click', () => {
+    aboutOverlay.style.display = 'flex';
+});
+
+closeAbout.addEventListener('click', () => {
+    aboutOverlay.style.display = 'none';
+});
+
+function updateOnlineCount() {
+    const randomNumber = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+    onlineCount.textContent = randomNumber;
+}
+
+setInterval(updateOnlineCount, 10000);
+
+updateOnlineCount();
+
+const contestBtn = document.getElementById('mosbtn');
+const mosOverlay = document.getElementById('mosOverlay');
+const closemos = document.getElementById('closemos');
+contestBtn.addEventListener('click', () => {
+    mosOverlay.style.display = 'flex';
+});
+closemos.addEventListener('click', () => {
+    mosOverlay.style.display = 'none';
 });
 </script>
 
