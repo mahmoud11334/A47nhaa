@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<meta charset="UTF-8">
+<title>A47nhaa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="welcome">
+    <h1 class="title">أهلاً بك في موقع أشحنها</h1>
+    <p class="subtitle">سريع - آمن - سهل</p>
+    <button class="start-btn">ابدأ</button>
+</div>
+
+<div class="main">
+    <div class="top-bar">
+        <img src="images/logo.png" class="logo-img">
+    </div>
+
+    <div class="main-content">
+        <h1 class="main-title">الشاشة الرئيسية</h1>
+        <p class="main-text">يرجى اختيار مكان التحويل</p>
+        <p class="sub-text">عليك الدخول لقناة الواتساب</p>
+
+        <div class="butn-box">
+
+            <button class="menu-btn" id="tbrBtn">
+                <span class="material-symbols-outlined">volunteer_activism</span>
+                تبرع
+            </button>
+
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">assignment</span>
+                عرض الباقات
+            </button>
+
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">home_health</span>
+                الضمانات
+            </button>
+
+            <button class="menu-btn" id="aboutBtn">
+                <span class="material-symbols-outlined">info</span>
+                حول
+            </button>
+
+            <button class="menu-btn" onclick="window.open('https://whatsapp.com/channel/0029VbCCFuEICVfoz1tTeC1s','_blank')">
+                <img src="images/wats.png">
+                قناة واتساب
+            </button>
+
+            <button class="menu-btn" id="mosbtn">
+                <span class="material-symbols-outlined">lock_open</span>
+                مسابقات
+            </button>
+
+        </div>
+
+        <div class="overlay" id="aboutOverlay">
+    <div class="about-box">
+        <button class="close-btn" id="closeAbout">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <h2 class="about-title">حول</h2>
+
+        <p class="about-text">
+           أهلا بك نحن فريق الدعم الفني لدي مؤقع و منصه أشحهنا دائما نحاول المحافظه علي افضل جوده 
+           في تقديم الخدمه لعملائنا الكرام و نسعي دائما لتطوير المنصه و اضافه مميزات الجديده
+           و دائما نسعي لتقديم أقل سعر امام خدمة البيع او الشحن  ولاكن 
+           من نحن؟
+           نحن فريق عمل صغير يسعي دائما بتقديم جوده عاليا 
+        </p>
+          <p class="own"> مالك المنصه و الصفحة : @mahmoud</p>
+          <p> يجب عليك دخول قناة الواتساب الخاصه بنا لمتابعة كل جديد
+           و متابعة العروض و المسابقات الشهرية و العروض اليوميه
+           ثق بنا دائما نسعي لأجلك و لأجل راحت بالكم
+          </p>
+
+        <div class="online-box">
+            <span class="online-text">متصل الآن:</span>
+            <span class="online-number" id="onlineCount">2</span>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" id="mosOverlay">
+    <div class="mos-box">
+        <button class="close-btn" id="closemos">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <h2 class="mos-title">مسابقات و سحب مجاني و عروض</h2>
+
+        <p class="mos-text">
+        نشط : مسابقة ببجي ,100لاعب ضد بعض في جيم ارنغل سولو سكواد الفائز يحصل علي سيزون ببجي الحالي بشكل مجاني
+	للمزيد من التفاصيل و الأشتراك انضم لقناة الواتساب   
+ 	</p>
+	<p class="sahb-text">
+	السحب : لا يوجد سحب حتا الان
+	</p>
+	<p class="ard-test">
+	العروض : عرض الافتتاح , الحصول علي جميع الباقات بأعلي تخفيض ممكن
+	</p>
+         </div>
+</div>
+
+        <div class="footer">
+            جميع الحقوق محفوظة لدى أشحنها © 2026
+        </div>
+    </div>
+</div>
+
+<div class="tbr" id="tbr" style="display:none;">
+
+    <div class="top-bar">
+        <img src="images/logo.png" class="logo-img">
+    </div>
+
+    <div class="main-content">
+        <h1 class="main-title">شاشة التبرع</h1>
+        <p class="main-text">اختر جهة التبرع</p>
+
+        <div class="butn-box">
+
+            <button class="menu-btn" id="donateAsh7nha">
+                تبرع لشحنها
+            </button>
+
+            <button class="menu-btn" id="donateGaza">
+                تبرع لغزة
+            </button>
+
+            <button class="menu-btn" id="donateCancer">
+                تبرع لمستشفيات علاج السرطان
+            </button>
+
+            <button class="btn-back" id="backToMain">
+        <span class="material-symbols-outlined">arrow_back</span>
+             رجوع
+            </button>
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="tbr3" id="tbr3">
+    <div class="tbr3-box">
+
+        <button class="btn-back" id="backToTbr">
+            <span class="material-symbols-outlined">arrow_forward</span>
+            رجوع
+        </button>
+
+        <h2 class="tbr3-title">إتمام التبرع</h2>
+
+        <input 
+            type="number" 
+            id="donateAmount" 
+            class="donate-input" 
+            placeholder="حدد قيمة تبرعك"
+        >
+
+        <select id="currencySelect" class="donate-select">
+            <option value="">اختار العملة</option>
+            <option value="جنيه">جنيه</option>
+            <option value="ريال">ريال</option>
+            <option value="دولار">دولار</option>
+            <option value="يورو">يورو</option>
+            <option value="دينار">دينار</option>
+        </select>
+
+        <button class="pay-btn" id="payNow">
+            أدفع
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
